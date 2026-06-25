@@ -38,6 +38,7 @@ export function HeaderSlider() {
         <Slider ref={setSliderRef} {...settings} className="mainimg_slide">
           {heroSlides.map((slide, index) => (
             <div key={slide.id} className="relative">
+              <div className="absolute inset-0 z-[1] bg-black/10 pointer-events-none" />
               {/* Mobile image */}
               <div className="block lg:hidden relative w-full h-[100vh]">
                 <Image

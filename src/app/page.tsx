@@ -19,7 +19,7 @@ export default function Home() {
         <HeaderSlider />
 
         <main className="main relative lg:pt-0">
-          <article className="contents ml-[10%] border-l border-[#eee] relative">
+          <article className="ml-[10%] border-l border-[#eee] relative">
             <NewsSection />
             <ScheduleSection />
             <ProfileSection />

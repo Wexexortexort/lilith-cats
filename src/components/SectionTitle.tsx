@@ -15,7 +15,7 @@ export function SectionTitle({ title, className = "" }: SectionTitleProps) {
       ref={ref}
       className={`midashi border-l border-black -ml-px text-[1.4em] lg:text-[1.5em] xl:text-[1.8em] font-libre tracking-[0.2em] pl-[10%] leading-[1.4] ${className}`}
     >
-      <h2 className="relative">
+      <h2 className="relative inline-block">
         <span
           className="inline-block transition-[clip-path] duration-[800ms] ease-out"
           style={{

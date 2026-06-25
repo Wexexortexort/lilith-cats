@@ -8,7 +8,16 @@ import { ViewMoreButton } from "@/components/ViewMoreButton";
 import { useInView } from "@/hooks/useInView";
 
 export function ScheduleSection() {
-  const [activeDay, setActiveDay] = useState(scheduleItems[0]);
+  const [activeDay, setActiveDay] = useState(() => {
+    const today = new Date();
+    const match = scheduleItems.find(
+      (item) =>
+        item.year === today.getFullYear() &&
+        item.month === today.getMonth() + 1 &&
+        item.day === today.getDate()
+    );
+    return match ?? scheduleItems[0];
+  });
   const { ref, isInView } = useInView<HTMLDivElement>({ threshold: 0.1 });
 
   return (
@@ -20,7 +29,7 @@ export function ScheduleSection() {
           ref={ref}
           className={`schedule_area_wrap mt-[10%] lg:mt-0 transition-all duration-500 ease-in ${
             isInView ? "opacity-100" : "opacity-0"
-          } lg:w-[60%]`}
+          } lg:w-[60%] lg:ml-[5%]`}
         >
           {/* Day selector */}
           <div className="schedule_day_select overflow-x-auto lg:mt-0 whitespace-nowrap no-scrollbar relative">
@@ -112,7 +121,7 @@ export function ScheduleSection() {
               ))}
             </div>
 
-            <div className="viewbtn mt-12">
+            <div className="viewbtn mt-12 lg:text-right">
               <ViewMoreButton href="/schedule/" />
             </div>
           </div>

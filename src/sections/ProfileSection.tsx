@@ -21,11 +21,11 @@ export function ProfileSection() {
         {/* Profile image */}
         <div
           ref={imgRef}
-          className={`profile_img pt-[10%] lg:pt-0 w-full lg:w-1/2 transition-all duration-500 ease-in ${
+          className={`profile_img pt-[10%] lg:pt-0 w-full lg:w-[40%] transition-all duration-500 ease-in ${
             imgInView ? "opacity-100" : "opacity-0"
           }`}
         >
-          <span className="block relative aspect-[2/3] lg:aspect-auto lg:pt-[66%] w-full ml-[-12%] lg:ml-0 bg-no-repeat bg-center bg-cover">
+          <span className="block relative aspect-[2/3] w-full ml-[-12%] lg:ml-0">
             <Image
               src={profileData.image}
               alt={profileData.name}
@@ -39,7 +39,7 @@ export function ProfileSection() {
         {/* Profile text */}
         <div
           ref={textRef}
-          className={`profile_in inner pt-[10%] px-[10%] lg:pt-0 lg:pl-[5%] lg:w-[40%] lg:relative transition-all duration-500 ease-in ${
+          className={`profile_in inner pt-[10%] px-[10%] lg:pt-0 lg:pl-[10%] lg:w-[50%] lg:relative lg:flex lg:flex-col lg:justify-center transition-all duration-500 ease-in ${
             textInView ? "opacity-100" : "opacity-0"
           }`}
         >

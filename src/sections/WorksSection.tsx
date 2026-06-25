@@ -25,7 +25,7 @@ export function WorksSection() {
           ref={ref}
           className={`works_in inner pt-[10%] px-[10%] transition-all duration-500 ease-in ${
             isInView ? "opacity-100" : "opacity-0"
-          } lg:pt-0 lg:px-0 lg:w-[60%]`}
+          } lg:pt-0 lg:px-0 lg:ml-[5%] lg:w-[60%]`}
         >
           {/* Category tabs */}
           <ul className="catlist mb-16">
@@ -79,7 +79,7 @@ export function WorksSection() {
             ))}
           </div>
 
-          <div className="viewbtn mt-12 clear-both">
+          <div className="viewbtn mt-12 clear-both lg:text-right">
             <ViewMoreButton href="/works/" />
           </div>
         </div>
