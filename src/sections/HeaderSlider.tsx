@@ -45,7 +45,7 @@ export function HeaderSlider() {
                   src={slide.spImage}
                   alt=""
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   priority={index === 0}
                   sizes="100vw"
                 />
@@ -56,7 +56,7 @@ export function HeaderSlider() {
                   src={slide.pcImage}
                   alt=""
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   priority={index === 0}
                   sizes="100vw"
                 />
@@ -72,14 +72,14 @@ export function HeaderSlider() {
                 }`}
                 style={{ color: slide.titleColor }}
               >
-                MINAMI UMEZAWA
+                好运常在，万事大吉
                 <span
                   className="block text-[0.4em] tracking-[0.4em]"
                   style={{
-                    opacity: index === 0 ? 0.5 : 1,
+                    opacity: 0.7,
                   }}
                 >
-                  OFFICIAL WEBSITE
+                  LILITH · 好运 · 大吉
                 </span>
               </h1>
             </div>

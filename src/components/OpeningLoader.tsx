@@ -41,10 +41,10 @@ export function OpeningLoader() {
                   : "inset(0 100% 0 0)",
             }}
           >
-            MINAMI UMEZAWA
+            LILITH'S CATS
           </span>
           <span className="absolute inset-0 -z-10 text-[#eee]">
-            MINAMI UMEZAWA
+            LILITH'S CATS
           </span>
         </div>
       </div>

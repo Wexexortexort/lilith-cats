@@ -12,7 +12,7 @@ export function NewsSection() {
   return (
     <section className="area news py-[15%] lg:py-[10%] lg:pb-[5%]">
       <div className="lg:flex lg:items-start">
-        <SectionTitle title="NEWS" className="lg:w-[30%] lg:pr-[5%] lg:text-right lg:border-l-0 lg:ml-0 lg:pl-0" />
+        <SectionTitle title="DAILY" className="lg:w-[30%] lg:pr-[5%] lg:text-right lg:border-l-0 lg:ml-0 lg:pl-0" />
 
         <div
           ref={ref}

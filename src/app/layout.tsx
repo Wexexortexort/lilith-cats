@@ -17,28 +17,24 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "梅澤美波 OFFICIAL WEBSITE",
-  description:
-    "モデル・女優として活躍する梅澤美波のオフィシャルサイト。最新の出演情報やニュース、プロフィールを掲載しています。",
+  title: "LILITH'S CATS",
+  description: "好运常在，万事大吉 — 李好运与李大吉的专属主页。",
   icons: {
     icon: "/images/favicon.png",
     apple: "/images/apple-touch-icon.png",
   },
   openGraph: {
-    title: "梅澤美波 OFFICIAL WEBSITE",
-    description:
-      "モデル・女優として活躍する梅澤美波のオフィシャルサイト。最新の出演情報やニュース、プロフィールを掲載しています。",
+    title: "LILITH'S CATS",
+    description: "好运常在，万事大吉 — 李好运与李大吉的专属主页。",
     type: "website",
-    url: "https://minamiumezawa.jp",
-    images: ["https://minamiumezawa.jp/images/36/31c/382e6ed04ed1498c44dccdd1ecf5c.png"],
-    siteName: "梅澤美波 OFFICIAL WEBSITE",
+    images: ["/images/og-image.png"],
+    siteName: "LILITH'S CATS",
   },
   twitter: {
     card: "summary_large_image",
-    title: "梅澤美波 OFFICIAL WEBSITE",
-    description:
-      "モデル・女優として活躍する梅澤美波のオフィシャルサイト。最新の出演情報やニュース、プロフィールを掲載しています。",
-    images: ["https://minamiumezawa.jp/images/36/31c/382e6ed04ed1498c44dccdd1ecf5c.png"],
+    title: "LILITH'S CATS",
+    description: "好运常在，万事大吉 — 李好运与李大吉的专属主页。",
+    images: ["/images/og-image.png"],
   },
 };
 
@@ -49,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="ja"
+      lang="zh-CN"
       className={`${notoSerifJP.variable} ${libreBaskerville.variable} antialiased`}
     >
       <body className="font-serif-jp text-[#333] bg-white overflow-x-hidden">

@@ -5,6 +5,7 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #333333;
+  --color-accent: #d4a574;
   --font-serif-jp: var(--font-noto-serif-jp), "Noto Serif JP", serif;
   --font-libre: var(--font-libre-baskerville), "Libre Baskerville", serif;
 }

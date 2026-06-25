@@ -44,3 +44,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+
+# source images (too large for git)
+public/images/1/
+public/images/processed/
+
+# web articles (not part of the site)
+web-articles/
+
+# temp scripts
+*.js
